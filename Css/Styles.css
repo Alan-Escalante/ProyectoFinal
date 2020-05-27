@@ -1,0 +1,343 @@
+/*Reiniciar*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+/*Estilo del menu*/
+
+html, body{
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h3 {
+  padding-bottom: 20px;
+  Color:  #D67A2A;
+}
+h2{
+    padding-bottom: 20px;
+    color:#073069;
+}
+
+p{
+  margin: 10px 0;
+  color:#17202A;
+  text-align: justify;
+
+}
+ p1{
+   margin: 10px 0;
+   color:#fff;
+}
+
+/* Clases en General */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+.text-primary {
+  color:#DF5131;
+}
+.text-primary1 {
+  color:#073069;
+  text-align: justify;
+}
+.lead {
+  font-size: 20px;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #D67A2A;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn1 {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #073069;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #073069;
+}
+.btn1:hover {
+  background: #D67A2A;
+}
+.btn-light{
+  background: #D67A2A;
+  color: #fff;
+}
+.btn-light1{
+  background: #073069;
+  color: #fff;
+}
+.bg-dark{
+background: #fff; /*#073069;*/
+color: #fff;
+}
+.bg-dark1{
+background: #fff;
+color: #fff;
+}
+.bg-light{
+  background: #580B65;
+  color:  #D67A2A;
+}
+.bg-light1{
+  background: #26B62C;
+  color: #073069;
+}
+.bg-light2{
+  background: #fff;
+  color: #fff;
+}
+.bg-primary{
+  background: #5BBF21;
+  color: #215b33;
+  font-size: 10px;
+}
+.clr{
+  clear: both;
+}
+.l-heading{
+  font-size: 40px;
+}
+.l-heading1{
+  font-size: 40px;
+  text-align: center;
+  color: #dfe32a;
+}
+/*Padding */
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+ /*Navbar*/
+#navbar{
+background: #D67A2A;
+color: #fff;
+overflow: auto;
+/*font-weight:bold;
+position: fixed;*/
+}
+#navbar a{
+  color: #fff;
+}
+#navbar h1{
+  float: left;
+  padding-top: 20px;
+}
+#navbar ul{
+  list-style: none;
+  float: right;
+}
+#navbar ul li{
+  float: left;
+}
+#navbar ul li a{
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current{
+
+border-color: #3d8e33;
+ background: #073069;
+  color: #fff;
+}
+/*Bienvenida*/
+#welcome{
+  background: url("../Imagenes/montañas.jpeg") no-repeat center center/cover;
+  height:600px;
+
+}
+#welcome1{
+  background: url("../Imagenes/restaurante.jpeg") no-repeat center center/cover;
+  height: 600px;
+}
+#welcome2{
+  background: url("../Imagenes/fuegoartificial.jpeg") no-repeat center center/cover;
+  height: 600px;
+}
+
+#welcome .welcome-content{
+  color: #fff;
+  text-align: justify;
+  padding-top: 170px;
+}
+
+#welcome .welcome-content1{
+  color:#faa;
+  text-align: justify;
+  padding-top: 100px;
+}
+#welcome .welcome-content h1{
+  font-size: 30px;
+  line-height: 1.2em;
+}
+#welcome .welcome-content p{
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+#welcome .container {
+  overflow: hidden !important;
+}
+/* Información Principal */
+
+#home-info {
+  height: 450px;
+}
+#home-info .info-img {
+  float: right;
+  width: 500px;
+  background: url('https://via.placeholder.com/800x800') no-repeat  center cover;
+  min-height: 0%;
+}
+#home-info .info-img1 {
+  float: right;
+   width: 400px;
+  background: url('https://via.placeholder.com/800x800') no-repeat  center cover;
+  min-height: 0%;
+}
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 90%;
+  text-align: justify;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home-info .info-content1 {
+  float: left;
+ width: 50%;
+  height: 90%;
+  text-align: justify;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px
+}
+/*Informacion Secundaria*/
+.box{
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+.box 1{
+  margin-bottom: 10px;
+}
+/*Acerca de*/
+#about-info .info-right{
+  float:right;
+  width: 45%;
+  min-height: 90%;
+}
+#about-info .info-right1{
+  float:right;
+  width: 55%;
+  min-height: 100%;
+}
+#about-info .info-right1 img{
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 10%;
+}
+#about-info .info-right img{
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 40%;
+}
+#about-info .info-left{
+  float: left;
+  width: 45%;
+  min-height: 90%;
+  text-align: justify;
+}
+#about-info .info-left img{
+  display:block;
+  margin: auto;
+  width: 70%;
+  border-radius: 10%;
+}
+/*Testimonios*/
+#testimonials{
+  height: 600px;
+  background: url("/imagenes/fime.jpg") no-repeat center center/cover;
+  padding-top: 100px;
+}
+#testimonials1{
+  height: auto;
+  background: url("/imagenes/fime.jpg")no-repeat center center/cover;
+  padding-top: 100px;
+}
+#testimonials h2{
+  color:#fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#testimonials .testimonial1{
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+#testimonials .testimonial img{
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+/* Forma de Contacto */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+#contact-form textarea {
+  height: 200px;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #5BBF21;
+}
+/* Pie de página */
+#main-footer {
+  text-align: center;
+  background: #D67A2A;
+  color: #fff;
+  padding: 20px;
+}
+#box-1 {
+  background-color:blanchedalmond;
+  border: 3px solid #D67A2A; ;
+  border-radius: 5px;
+}
