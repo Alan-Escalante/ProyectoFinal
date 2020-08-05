@@ -44,6 +44,17 @@ p{
   overflow: auto;
   padding: 0 20px;
 }
+.fondo{
+  color: #DF5131;
+  font-style: italic;
+
+}
+.container2 {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
 .text-primary {
   color:#DF5131;
 }
@@ -225,8 +236,16 @@ border-color: #3d8e33;
 
 #home-info .info-content1 {
   float: left;
- width: 50%;
+  width: 50%;
   height: 90%;
+  text-align: justify;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+#home-info .info-content2 {
+  float: left;
+  width: 42%;
+  height: 200%;
   text-align: justify;
   padding: 50px 30px;
   overflow: hidden;
@@ -256,6 +275,7 @@ border-color: #3d8e33;
   width: 55%;
   min-height: 100%;
 }
+
 #about-info .info-right1 img{
   display: block;
   margin: auto;

@@ -1,0 +1,173 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es la descripción de mi sitio web">
+    <meta name="keywords" content="fime, técnica desarrrollo web, learn">
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+    <meta name="author" content="FIME">
+    <title>Informes</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/Styles.css">
+  </head>
+    <header>
+  <nav id="navbar">
+  <div class="container">
+    <h1 class="logo" title="Nuevo Leon"><a href ="./index.html">Nuevo Leon</a></h1>
+        <ul>
+    <em><li><a href="./Historia.html">Historia</a></li>
+      <li><a href="./Gastronomia.html">Gastronomia</a></li>
+      <li><a href="./Tradiciones.html">Tradiciones</a></li>
+      <li><a href="./Sugerencias.html">Sugerencias</a></li></em>
+      </ul>
+    </div>
+  </nav>
+  </header>
+  <section id="home-info" class="bg-ligth">
+    <div class="info-content2">
+      <td>
+    <form>
+      <body class="fondo">
+      <div class="container2">
+      <br>
+      <h2>¿Quieres saber mas acerca de Nuevo Leon?</h2><br>
+        <p>Ingresa tu nombre: <input type="text" id="txtNom"></p>
+        <p>Ingresa tu Correo electronico: <input type="text" id="txtcorreo"></p>
+        <p>Ingresa tu Numero de Telefono: <input type="text" id="txtcel"></p>
+        <br>
+        <p>Selecciona que informacion desea recibir</p><br>
+        <input type="checkbox" id="opt1"> Historia<br>
+        <input type="checkbox" id="opt2"> Gastronomia<br>
+        <input type="checkbox" id="opt3"> Tradiciones<br>
+        <br>
+        <h2>¿Por donde deseas recibir la Informacion?</h2><br>
+        <input type="radio" id="c1" name="medio"> Correo<br>
+        <input type="radio" id="t2"namde="medio"> Telefono<br>
+        <br>
+        <h2>¿Te gustaria Conocer Nuevo Leon?</h2><br>
+        <input type="radio" id="s1" name="medio"> Si<br>
+        <input type="radio" id="n2"namde="medio"> No<br>
+        <br>
+        <h2>¿Que te parecio la pagina?</h2>
+        <textarea id="descripcion" row="10" cols="40" ></textarea><br>
+        <p>
+        <br>
+            <button class="btn btn-light" value="Enviar" onclick="Enviar()" >Enviar</button>
+            <button class="btn btn-light1" value="Borrar" onclick="Borrar()">Borrar</button>
+        </p>
+    </form>
+  </div>
+</div>
+<br><br>
+<form name = "Imagenes">
+    <select name = "imagen" size="1" onchange="Ver_La_Imagen()">
+        <option value="./Imagenes/M1.jpg " width="300" height="350">Elige una opcion</option>
+        <option value="./Imagenes/tacos1.jpg" width="400" height="350">1</option>
+        <option value="./Imagenes/carne.jpg" width="400" height="350">2</option>
+        <option value="./Imagenes/noche.jpg" width="400" height="350">3</option>
+        <option value="./Imagenes/santiago1.jpg" width="400" height="350">4</option>
+
+    </select>
+ </form>
+   <img src = "./Imagenes/M1.jpg" name = "img" border="1"></img>
+</td>
+</section>
+</div>
+</div>
+</div>
+<br>
+<!--<div align = "rigth">-->
+<i class="fab fa-facebook fa-3x"  onclick="facebook()"></i>
+<i class="fab fa-twitter-square fa-3x" onclick="twitter()"></i>
+<i class="fab fa-youtube fa-3x" onclick="youtube()"></i>
+<br><br><br>
+
+<button class="btn btn-light" value="Enviar" onclick="Imprimir()" >Imprimir</button>
+<br><br>
+<div align ="container">
+<img src="https://www.meteored.mx/wimages/foto767ccc0bd315eb2ff5b4f765d673db4a.png"></img>
+<br><br>
+</div>
+<div align="center">
+<button class="btn btn-light1" value="Enviar" onclick="Clima()" >Clima</button>
+</div>
+<div class="clr"></div>
+<footer id="main-footer">
+<p1>FIME &copy; 2019, Todos los derechos Reservados</p1>
+</footer>
+</body>
+<script>
+
+    var nom, correo, tel;
+    function Enviar(){
+        //Validar en todos los campos estan llenos
+        nom = document.getElementById("txtNom").value;
+        correo = document.getElementById("txtcorreo").value;
+        tel = document.getElementById("txtcel").value;
+
+        if(nom==""){
+            alert("El campo de Nombre esta vacio, favor de llenar toda la informacion");
+        }
+         else if(correo==""){
+            alert("El campo de correo esta vacio");
+            //Que borre el campo para que pueda
+            document.getElementById("txtcorreo").value="";
+        }
+         else if(document.getElementById("medio").checked="false"){
+          alert("No haz seleccionado el medio de comunicacion");
+        }
+        else if(document.getElementById("descripcion").value.length > 2000){
+          alert("La descripcion es muy larga....")
+        }
+
+    }
+      function facebook(){
+        var c1;
+        c1 = confirm("¿Quieres ir a la pagina de facebook?");
+
+        if(c1){
+            window.open("https://es-la.facebook.com/");
+        }
+        else{
+            alert("Disfruta la pagina");
+        }
+      }
+        function twitter(){
+          var c2;
+          c2 = confirm("¿Quieres ir a la pagina de twitter?");
+
+          if(c2){
+              window.open("https://twitter.com/?lang=es");
+          }
+          else{
+              alert("Disfruta la pagina");
+          }
+      }
+      function youtube(){
+        var c3;
+        c3 = confirm("¿Quieres ir a la pagina de youtube?");
+        if(c3){
+            window.open("https://www.youtube.com/?tab=r1&gl=MX");
+        }
+        else{
+            alert("Disfruta la pagina");
+        }
+      }
+      function Ver_La_Imagen(){
+           document.images.img.src = document.Imagenes.imagen.options[document.Imagenes.imagen.selectedIndex].value;
+           iimagenes
+       }
+       function Borrar(){
+         window.location.reload();
+       }
+       function Imprimir(){
+         window.print();
+       }
+       function Clima(){
+         window.open("https://www.meteored.mx/clima_Monterrey-America+Norte-Mexico-Nuevo+Leon-MMMY-1-21045.html");
+       }
+
+</script>
+
+
+</html>
